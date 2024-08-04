@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-
+// import Sidebar from "./Components/Sidebar/Sidebar";\
+// import Login from "./Components/Login/loginask.jsx";
+// import Sidebar from './Components/Navbar/Sidebar'
+import Cor from './Components/NRI/corousal/corsoual.jsx'
+import Que from './Components/NRI/questoin/question.jsx'
+// import Footer from "./Components/Footer/Footer";
+import { BrowserRouter as Router } from "react-router-dom";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <div className="Poppins">
+          {/* <Footer /> */}
+          {/* <Login/> */}
+          <Que/>
+          {/* <Sidebar /> */}
+          <Cor/>
+        </div>
+      </Router>
+    </>
   );
 }
 
