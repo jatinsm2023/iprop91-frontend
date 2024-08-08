@@ -54,7 +54,7 @@ const FAQ = () => {
 
   return (
     <>
-        <div className="h-[200vh] bg-center bg-cover bg-no-repeat" style={{ backgroundImage: "url('/images/image.jpg')"}}></div>
+        {/* <div className="h-[200vh] bg-center bg-cover bg-no-repeat" style={{ backgroundImage: "url('/images/image.jpg')"}}></div> */}
       <div className="min-h-screen bg-white p-8">
         <h2 className="text-4xl md:text-6xl text-center mb-8">
           You Might Have Questions!

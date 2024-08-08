@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  IconButton,
-  List,
-  ListItem,
-  ListItemPrefix,
-  Drawer,
-  Card,
-} from "@material-tailwind/react";
-
+import { IconButton, Drawer, Card, List, ListItem } from "@material-tailwind/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 
 export default function SidebarWithBurgerMenu() {
@@ -18,9 +10,14 @@ export default function SidebarWithBurgerMenu() {
 
   return (
     <>
-      <IconButton variant="text" size="lg" onClick={openDrawer} className={"relative top-"}>
+      <IconButton
+        variant="text"
+        size="lg"
+        className="fixed top-8 left-8 z-50"
+        onClick={openDrawer}
+      >
         {isDrawerOpen ? (
-          <XMarkIcon className="h-8 w-8 stroke-2" />
+          <XMarkIcon className="h-10 w-10 stroke-2" />
         ) : (
           <svg
             width="24"
@@ -36,12 +33,8 @@ export default function SidebarWithBurgerMenu() {
           </svg>
         )}
       </IconButton>
-      <Drawer open={isDrawerOpen} onClose={closeDrawer} >
-        <Card
-          color="transparent"
-          shadow={false}
-          className="h-[calc(100vh-2rem)] w-full p-4"
-        >
+      <Drawer open={isDrawerOpen} onClose={closeDrawer}>
+        <Card color="transparent" shadow={false} className="h-[calc(100vh-2rem)] w-full p-4">
           <List>
             <ListItem>Concierge</ListItem>
             <ListItem>Safe</ListItem>

@@ -14,8 +14,10 @@ module.exports = withMT({
       },
       fontFamily: {
         sans: ['Poppins', 'sans-serif'],
+      },
+      colors:{
+        gold: "#f9bc2e"
       }
-      
     },
   },
   plugins: [],

@@ -45,7 +45,7 @@ const ExpertContact = () => {
         
       <div
         ref={containerRef}
-        className="flex flex-col items-center justify-center  bg-white"
+        className="flex flex-col items-center justify-center  bg-white max-w-[1500px] m-auto"
       >
         <div className="hidden md:!flex md:!flex-row justify-between w-full md:px-10">
           <img
@@ -103,7 +103,7 @@ const ExpertContact = () => {
           {scrolled ? 'No need to worry you can do it now' : 'Just book a boom short demo we will contact you supasoon!'}
         </p>
       </div>
-      <div className="min-h-screen"></div>
+      <div className="min-h-96"></div>
     </>
   );
 };
